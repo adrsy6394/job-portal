@@ -48,7 +48,7 @@ const ApplicantList = ({ jobId, jobTitle }) => {
         <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2">
           {applicants.map((app, index) => {
             const resumeDownloadUrl = app.seeker.resumeUrl 
-              ? `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000'}${app.seeker.resumeUrl}`
+              ? `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'https://job-portal-hajc.onrender.com'}${app.seeker.resumeUrl}`
               : null;
 
             return (

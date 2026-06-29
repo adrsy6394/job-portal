@@ -55,7 +55,7 @@ const JobSeekerDashboard = () => {
   }
 
   const resumeDownloadUrl = profile.resumeUrl 
-    ? `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000'}${profile.resumeUrl}`
+    ? `${import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'https://job-portal-hajc.onrender.com'}${profile.resumeUrl}`
     : null;
 
   return (
